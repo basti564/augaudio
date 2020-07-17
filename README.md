@@ -1,21 +1,20 @@
 # augaudio
 This package contains multiple simple audio data augmentations in order to increase/test the robustness of neural networks.
 
+###### Original
 <img src="https://user-images.githubusercontent.com/34898868/87811710-60d15000-c85f-11ea-8bda-da417d84b2ba.png" width="600">
 
-###### Original
+###### Gaussian Noise
 <img src="https://user-images.githubusercontent.com/34898868/87811713-629b1380-c85f-11ea-8c7a-f059138b8048.png" width="600">
 
-###### Gaussian Noise
+###### Pitch Shift
 <img src="https://user-images.githubusercontent.com/34898868/87811726-6464d700-c85f-11ea-9f31-f58aa7e91785.png" width="600">
 
-###### Pitch Shift
+###### Time Stretch
 <img src="https://user-images.githubusercontent.com/34898868/87811730-65960400-c85f-11ea-93af-828c98aa9f51.png" width="600">
 
-###### Time Stretch
-<img src="https://user-images.githubusercontent.com/34898868/87811733-66c73100-c85f-11ea-8bc0-5f4b2c5e7c79.png" width="600">
-
 ###### Crush
+<img src="https://user-images.githubusercontent.com/34898868/87811733-66c73100-c85f-11ea-8bc0-5f4b2c5e7c79.png" width="600">
 
 ## Installation
 
