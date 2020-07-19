@@ -60,10 +60,12 @@ for augmentation in range(4):
 ## Augmentations
 | Augmentation | index | Description | takes sample_rate | negative intensity |
 | --- | --- | --- | --- | --- |
-| GaussianNoise | 0 | Applies gaussian noise to the audio data | false | allowed |
-| PitchShift | 1 | Shifts the pitch of the audio data | true | allowed |
-| TimeStretch | 2 | Stretches the time of the audio data | false | disallowed |
-| Crush | 3 | Crushes details by applying and reversing a pitch shift | true | allowed |
+| Augmentations | -2 | Applies /multiple/ random augmentations | false | available |
+| Random | -1 | Applies random augmentation | false | available |
+| GaussianNoise | 0 | Applies gaussian noise to the audio data | false | n/a |
+| PitchShift | 1 | Shifts the pitch of the audio data | true | available |
+| TimeStretch | 2 | Stretches the time of the audio data | false | n/a |
+| Crush | 3 | Crushes details by applying and reversing a pitch shift | true | available |
 
 ## Copyright Notice
 ```
