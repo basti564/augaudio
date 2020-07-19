@@ -32,7 +32,7 @@ def augment(data, augmentation=-1, intensity=None):
 
 def Random(data, intensity=None):
     if intensity == None:
-        random.randint(1,5)
+        intensity = random.randint(1,5)
     return augment(data,random.randint(0,len(augmantations)),intensity)
 
 def Augmentations(data, intensity=None):
