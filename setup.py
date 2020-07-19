@@ -21,6 +21,7 @@ setup(
     install_requires=[
           'numpy >= 1.16.2',
           'librosa >= 0.7.2',
+          'numba < 0.50',
           ],
     license="Apache",
     classifiers=[
