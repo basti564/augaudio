@@ -31,7 +31,7 @@ import soundfile
 
 y, sr = librosa.load('audio.wav')
 
-augmented = augaudio.augment(y, 1, 4, sr) # only supply sampling_rate for augmentations 1 and 4, if not supplied sampling_rate will default to 22050
+augmented = augaudio.augment(y, 1, 4)
 
 soundfile.write('augmented.wav', augmented, sr)
 ```
@@ -58,14 +58,14 @@ for augmentation in range(4):
 ```
 
 ## Augmentations
-| Augmentation | index | Description | takes sample_rate | negative intensity |
-| --- | --- | --- | --- | --- |
-| Augmentations | -2 | Applies /multiple/ random augmentations | false | available |
-| Random | -1 | Applies random augmentation | false | available |
-| GaussianNoise | 0 | Applies gaussian noise to the audio data | false | n/a |
-| PitchShift | 1 | Shifts the pitch of the audio data | true | available |
-| TimeStretch | 2 | Stretches the time of the audio data | false | n/a |
-| Crush | 3 | Crushes details by applying and reversing a pitch shift | true | available |
+| Augmentation | index | Description | negative intensity |
+| --- | --- | --- | --- |
+| Augmentations | -2 | Applies /multiple/ random augmentations | available |
+| Random | -1 | Applies random augmentation | available |
+| GaussianNoise | 0 | Applies gaussian noise to the audio data | n/a |
+| PitchShift | 1 | Shifts the pitch of the audio data | available |
+| TimeStretch | 2 | Stretches the time of the audio data | n/a |
+| Crush | 3 | Crushes details by applying and reversing a pitch shift | available |
 
 ## Copyright Notice
 ```

@@ -17,7 +17,7 @@ def Crush(data, crush_factor, sampling_rate=22050):
 
 augmantations = (GaussianNoise, PitchShift, TimeStretch, Crush)
 
-def augment(data, augmentation=-1, intensity=None, sampling_rate=None):
+def augment(data, augmentation=-1, intensity=None):
     if not isinstance(data,np.ndarray):
         raise AttributeError('Expecting type(data) to be numpy.ndarray')
     if augmentation == -1:
@@ -28,10 +28,7 @@ def augment(data, augmentation=-1, intensity=None, sampling_rate=None):
         raise AttributeError('Augmentation must be an integer in [-2, ' + str(len(augmantations)-1) + ']')
     if intensity == None:
         intensity = 2
-    if not sampling_rate == None:
-        return augmantations[augmentation](data, intensity, sampling_rate).astype(type(data[0]))
-    else:
-        return augmantations[augmentation](data, intensity).astype(type(data[0]))
+    return augmantations[augmentation](data, intensity).astype(type(data[0]))
 
 def Random(data, intensity=None):
     if intensity == None:
