@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name="augaudio",
-    version="1.0.2",
+    version="1.0.3",
     author="Bastian Schwickert",
     author_email="Bastian.Schwickert@gmail.com",
     description="A simple audio data augmentation package",
@@ -30,4 +30,9 @@ setup(
         "Operating System :: OS Independent",
 		"Topic :: Scientific/Engineering",
     ],
+    entry_points={
+        "console_scripts": [
+            "augaudio=augaudio.cli:main",
+        ]
+    },
 )

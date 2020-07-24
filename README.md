@@ -23,7 +23,7 @@ You can install this package via
 
 ## Usage
 
-Example usage:
+### Example usage:
 ```python
 import librosa
 import augaudio
@@ -35,19 +35,19 @@ augmented = augaudio.augment(y, 1, 4)
 
 soundfile.write('augmented.wav', augmented, sr)
 ```
-Directly access one of the augmentations:
+#### Directly access one of the augmentations:
 ```python
 ...
 augmented = augaudio.GaussianNoise(y, 4)
 ...
 ```
-Chain augmentations together:
+#### Chain augmentations together:
 ```python
 ...
 augmented = augaudio.GaussianNoise(augaudio.TimeStretch(y, 2), 4)
 ...
 ```
-Iterate over augmentations:
+#### Iterate over augmentations:
 ```python
 ...
 for augmentation in range(4):
@@ -56,6 +56,11 @@ for augmentation in range(4):
     soundfile.write(str(augmentation) + '-' + str(intensity) + '.wav', augmented, sr)
 ...
 ```
+### Command Line Usage:
+#### Single File:
+`augaudio augaudio /path/to/audio.wav 0 5`
+#### Complete Folder:
+`augaudio /path/to/input 0 5 /path/to/output`
 
 ## Augmentations
 | Augmentation | index | Description | negative intensity |
