@@ -58,7 +58,7 @@ for augmentation in range(4):
 ```
 ### Command Line Usage:
 #### Single File:
-`augaudio augaudio /path/to/audio.wav 0 5`
+`augaudio /path/to/audio.wav 0 5`
 #### Complete Folder:
 `augaudio /path/to/input 0 5 /path/to/output`
 

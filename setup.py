@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name="augaudio",
-    version="1.0.3",
+    version="1.0.4",
     author="Bastian Schwickert",
     author_email="Bastian.Schwickert@gmail.com",
     description="A simple audio data augmentation package",
